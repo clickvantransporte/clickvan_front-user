@@ -1,12 +1,12 @@
 import { View, Text, StyleSheet, TextInput } from "react-native";
 import { router } from "expo-router";
-import Button from "../components/button";
+import Button from "@/src/components/button";
 
 export default function App() {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Menu</Text>
-            <Button title='Voltar' activeOpacity={0.8} onPress={() => router.back()}></Button>
+            <Button title='Voltar' backgroundColor="red" onPress={() => router.back()}></Button>
         </View>
     );
 }
