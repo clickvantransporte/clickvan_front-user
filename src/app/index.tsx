@@ -7,7 +7,7 @@ export default function App() {
         <View style={styles.container}>
             <Image style={styles.logo} source={require("../../assets/images/logo.png")}></Image>
             <View style={styles.containerText}>
-                <Text style={styles.intro}>Bem-vaiudo ao</Text>
+                <Text style={styles.intro}>Bem-vindo ao</Text>
                 <Text style={styles.title}>Clickvan</Text>
                 <Text style={styles.subtitle}>
                     Encontre o transporte ideal, anuncie sua van ou frete em passos simples, tudo na palma da sua mão.
