@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, TextInput } from "react-native";
+{/*import { View, Text, StyleSheet, TextInput } from "react-native";
 import { router } from "expo-router";
 import Button from "@/src/components/button";
 
@@ -36,4 +36,4 @@ const styles = StyleSheet.create({
         borderColor: '#aaa',
         borderRadius: 10,
     },
-});
+});*/}

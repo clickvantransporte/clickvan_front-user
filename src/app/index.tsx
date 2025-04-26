@@ -15,7 +15,7 @@ export default function App() {
                     <Text style={styles.subtitleText}>Você está a um click de facilitar seus deslocamentos.</Text>
                 </Text>
             </View>
-            <Button title="Vamos Começar" backgroundColor="#222831" onPress={() => router.navigate('/menu')}></Button>
+            <Button title="Vamos Começar" backgroundColor="#222831" onPress={() => router.navigate('/auth/login')}></Button>
         </View>
     );
 }
