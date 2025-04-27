@@ -5,7 +5,7 @@ import Button from "../components/button";
 export default function App() {
     return (
         <View style={styles.container}>
-            <Image style={styles.logo} source={require("../../assets/images/logo.png")}></Image>
+            <Image style={styles.logo} source={require("@/src/assets/images/logo.png")}></Image>
             <View style={styles.containerText}>
                 <Text style={styles.intro}>Bem-vindo ao</Text>
                 <Text style={styles.title}>Clickvan</Text>
