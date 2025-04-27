@@ -1,6 +1,10 @@
-import { TouchableOpacityProps, TextInputProps, TextInput } from "react-native";
+import { TouchableOpacityProps, TextInputProps, TextInput, StyleProp, TextStyle } from "react-native";
 import { styles } from "./styles";
 
-export function TextBox ({... rest}: TextInputProps) {
-    return <TextInput numberOfLines={1} style={styles.input} {...rest} />
+type props = {
+    style: StyleProp<TextStyle>
+} & TouchableOpacityProps;
+
+export function TextBox ({style, ... rest}: TextInputProps) {
+    return <TextInput numberOfLines={1} style={[styles.input, style]} {...rest} />
 }

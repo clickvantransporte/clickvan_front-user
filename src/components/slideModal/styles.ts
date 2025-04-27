@@ -1,4 +1,3 @@
-import { TextBox } from "@/src/components/textBox";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
@@ -55,5 +54,41 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
     color: "222831",
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.2)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  modalContainer: {
+    width: "80%",
+    backgroundColor: "white",
+    padding: 20,
+    borderRadius: 10,
+    alignItems: "center",
+  },
+  modalTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginBottom: 15,
+    color: "#222831",
+  },
+  modalText: {
+    fontSize: 16,
+    marginBottom: 20,
+    textAlign: "center",
+    color: "#555",
+  },
+  closeButton: {
+    position: "absolute",
+    right: 10,
+    top: 10,
+    padding: 5,
+  },
+  closeButtonText: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#555",
   },
 });

@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
   },
   title: {
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: 500,
     color: "#fff",
     padding: 0,
