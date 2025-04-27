@@ -4,22 +4,14 @@ import Button from "@/src/components/button";
 
 export default function App() {
     return (
-        <View style={styles.container}>
+        <>
             <Text style={styles.title}>Menu</Text>
             <Button title='Voltar' backgroundColor="red" onPress={() => router.back()}></Button>
-        </View>
+        </>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 20,
-        backgroundColor: '#000',
-        padding: 20,
-    },
     title: {
         fontSize: 50,
         fontWeight: 500,

@@ -1,6 +1,12 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
+  dropShadow: {
+    shadowColor: "#171717",
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.4,
+    shadowRadius: 2,
+  },
   button: {
     justifyContent: "center",
     alignItems: "center",

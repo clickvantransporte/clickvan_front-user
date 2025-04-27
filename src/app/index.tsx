@@ -1,14 +1,19 @@
-import { View, Text, StyleSheet, Image, } from "react-native";
+import { View, Text, StyleSheet, Image, TextInput, } from "react-native";
 import { router } from "expo-router";
 import Button from "../components/button";
+import { SvgXml } from 'react-native-svg';
+import GoogleSvg from '@/assets/images/googleSvg'
+
+
 
 export default function App() {
     return (
-        <View style={styles.container}>
+        <>
+            <GoogleSvg></GoogleSvg>
             <Image style={styles.logo} source={require("../../assets/images/logo.png")}></Image>
             <View style={styles.containerText}>
                 <Text style={styles.intro}>Bem-vindo ao</Text>
-                <Text style={styles.title}>Clickvan</Text>
+                <Text style={styles.title} onPress={() => router.navigate('/menu')}>Clickvan</Text>
                 <Text style={styles.subtitle}>
                     Encontre o transporte ideal, anuncie sua van ou frete em passos simples, tudo na palma da sua mão.
                     {'\n\n'}
@@ -16,19 +21,11 @@ export default function App() {
                 </Text>
             </View>
             <Button title="Vamos Começar" backgroundColor="#222831" onPress={() => router.navigate('/menu')}></Button>
-        </View>
+        </>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#fff',
-        padding: 20,
-        gap: 20,
-    },
     logo: {
         height: 200,
         resizeMode: 'contain',
@@ -38,7 +35,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'flex-start',
         gap: 5,
-        backgroundColor: '#fff',
         padding: 10,
     },
     intro: {
@@ -50,7 +46,6 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 56,
         fontWeight: 700,
-        color: '#222831',
     },
     subtitle: {
         fontSize: 15,
