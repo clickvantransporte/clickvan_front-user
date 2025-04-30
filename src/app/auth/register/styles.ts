@@ -1,4 +1,3 @@
-import { TextBox } from '@/src/components/textBox';
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
@@ -9,14 +8,49 @@ export const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 20,
     },
-    title: {
-        fontSize: 74,
-        fontWeight: 700,
-        color: '#222831',
-        flexDirection: 'row',
-        justifyContent: 'flex-start',
+    logo: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#fff',
+        padding: 20,
+        gap: 20,
     },
-    textColor : {
-        color: "#7B7F9E"
-    }
+    socialButton: {
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        justifyContent: 'center',
+        gap: '10',
+        padding: 16,
+        borderRadius: 10,
+        shadowOpacity: 0.5,
+        shadowRadius: 3.84,
+        elevation: 5,
+      },
+      boxTitle: {
+        fontSize: 16,
+        fontWeight: 500,
+        color: '#222831',
+        padding: 0,
+        margin: 0,
+      },
+      button: {
+        justifyContent: "center",
+        alignItems: "center",
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        borderRadius: 10,
+        shadowOpacity: 0.5,
+        shadowRadius: 3.84,
+        elevation: 5,
+      },
+      buttonTitle: {
+        fontSize: 24,
+        fontWeight: 500,
+        padding: 0,
+        margin: 0,
+      },
+      loginText: {
+        fontSize: 16,
+        color: "222831",
+      },
 });

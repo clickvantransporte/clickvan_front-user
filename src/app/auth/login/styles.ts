@@ -1,4 +1,3 @@
-import { TextBox } from "@/src/components/textBox";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
@@ -23,7 +22,7 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: 20,
-    paddingVertical: 11,
+    paddingVertical: 10,
     borderRadius: 10,
     shadowOpacity: 0.5,
     shadowRadius: 3.84,

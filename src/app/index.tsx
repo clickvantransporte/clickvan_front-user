@@ -1,14 +1,14 @@
 import { View, Text, StyleSheet, Image, } from "react-native";
 import { router } from "expo-router";
 import Button from "../components/button";
+import LogoSvg from "../assets/svg/logoSvg";
 
 export default function App() {
     return (
         <View style={styles.container}>
-            <Image style={styles.logo} source={require("@/src/assets/images/logo.png")}></Image>
+             <Text style={styles.intro}>Bem-vindo ao</Text>
+            <LogoSvg width={313} height={326} />
             <View style={styles.containerText}>
-                <Text style={styles.intro}>Bem-vindo ao</Text>
-                <Text style={styles.title}>Clickvan</Text>
                 <Text style={styles.subtitle}>
                     Encontre o transporte ideal, anuncie sua van ou frete em passos simples, tudo na palma da sua mão.
                     {'\n\n'}
@@ -45,11 +45,6 @@ const styles = StyleSheet.create({
         fontSize: 25,
         fontWeight: 400,
         fontStyle: 'italic',
-        color: '#222831',
-    },
-    title: {
-        fontSize: 56,
-        fontWeight: 700,
         color: '#222831',
     },
     subtitle: {
