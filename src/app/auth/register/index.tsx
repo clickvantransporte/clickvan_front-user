@@ -20,19 +20,19 @@ export default function Register({...rest}) {
                 <GoogleSvg width={22} height={22} />
                 <Text style={styles.boxTitle} >Inscreva-se com Google</Text>
             </TouchableOpacity> 
-            <View style={{flexDirection: "row", justifyContent: 'center', padding: 5}}>
-                <View style={{ height: 1, backgroundColor: '#000', width: '30%'}} />
-                <Text>OU</Text>
-                <View style={{ height: 1, backgroundColor: '#000', width: '30%' }} />
+            <View style={{flexDirection: "row", alignItems: "center", justifyContent: "center", paddingVertical: 5}}>
+                <View style={{ height: 3, backgroundColor: '#E3E3E7', width: '45%'}} />
+                <Text style={{paddingHorizontal: 5, color: "#222831" }}>OU</Text>
+                <View style={{ height: 3, backgroundColor: '#E3E3E7', width: '45%'}} />
             </View>
             <TouchableOpacity style={[styles.button, {backgroundColor: "#FFE100",}]}  activeOpacity={0.8} {...rest} onPress={() => router.navigate('/auth/credentials')}> 
                 <Text style={[styles.buttonTitle, {color: "#222831"}]}>Use seu e-mail</Text>
             </TouchableOpacity>
-            <View style={{justifyContent: "center", alignItems: "center", marginVertical: 35}}>
+            <View style={{justifyContent: "center", alignItems: "center", marginVertical: 10}}>
                 <TouchableOpacity activeOpacity={0.8} {...rest} onPress={() => router.navigate('/auth/login')}>
-                    <View style={{flexDirection: "row", justifyContent: 'center', padding: 5}}>
-                    <Text style={styles.loginText}>Já possui uma conta?</Text>
-                    <Text style={[styles.loginText, {fontWeight: "bold", paddingHorizontal: 5}]} >Fazer Login</Text>
+                    <View style={{flexDirection: "row", justifyContent: 'center',}}>
+                    <Text style={{fontSize: 16, color: "#7B7F9E"}}>Já possui uma conta?</Text>
+                    <Text style={{fontSize: 16, color: "222831", fontWeight: "bold", paddingHorizontal: 5}} >Fazer Login</Text>
                     </View>
                 </TouchableOpacity>                              
             </View>                               

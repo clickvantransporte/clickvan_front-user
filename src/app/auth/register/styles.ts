@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     },
     socialButton: {
         flexDirection: 'row',
-        alignItems: 'flex-start',
+        alignItems: 'center',
         justifyContent: 'center',
         gap: '10',
         padding: 16,
@@ -27,6 +27,7 @@ export const styles = StyleSheet.create({
         elevation: 5,
       },
       boxTitle: {
+        alignItems: "center",
         fontSize: 16,
         fontWeight: 500,
         color: '#222831',
@@ -34,7 +35,6 @@ export const styles = StyleSheet.create({
         margin: 0,
       },
       button: {
-        justifyContent: "center",
         alignItems: "center",
         paddingHorizontal: 20,
         paddingVertical: 10,
@@ -51,6 +51,6 @@ export const styles = StyleSheet.create({
       },
       loginText: {
         fontSize: 16,
-        color: "222831",
+        color: "#7B7F9E",
       },
 });

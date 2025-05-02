@@ -37,7 +37,8 @@ export default function Login({...rest}) {
             <View style={{justifyContent: "center", alignItems: "center", marginVertical: 35}}>
                 <TouchableOpacity activeOpacity={0.8} onPress={() => {modalRef.current.openModal()}} {...rest}> 
                     <Text style={styles.forgotPassword}>Esqueci minha senha</Text>
-                </TouchableOpacity>                                  
+                </TouchableOpacity>     
+                                   
             </View>
             <TouchableOpacity style={[styles.button, {backgroundColor: "#222831",}]}  activeOpacity={0.8} {...rest} onPress={() => router.navigate('/auth/register')}> 
                     <Text style={[styles.buttonTitle, {color: "#fff", fontWeight: "bold"}]}>Criar uma conta</Text>
