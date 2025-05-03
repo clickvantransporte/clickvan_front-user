@@ -6,7 +6,7 @@ import LogoSvg from "../assets/svg/logoSvg";
 export default function App() {
     return (
         <View style={styles.container}>
-             <Text style={styles.intro}>Bem-vindo ao</Text>
+            <Text style={styles.intro}>Bem-vindo ao</Text>
             <LogoSvg width={313} height={326} />
             <View style={styles.containerText}>
                 <Text style={styles.subtitle}>
@@ -46,6 +46,8 @@ const styles = StyleSheet.create({
         fontWeight: 400,
         fontStyle: 'italic',
         color: '#222831',
+        width: '100%',
+        paddingHorizontal: 10,
     },
     subtitle: {
         fontSize: 15,
