@@ -13,7 +13,6 @@ export const styles = StyleSheet.create({
     fontWeight: 500,
     color: "#222831",
     justifyContent: "flex-start",
-    borderWidth: 1,
   },
   button: {
     justifyContent: "center",
